@@ -1,8 +1,10 @@
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+!**/src/main/**
+!**/src/test/**
+
+**/src/resources/application-local.yml
 
 ### STS ###
 .apt_generated
@@ -12,12 +14,15 @@ target/
 .settings
 .springBeans
 .sts4-cache
+.log
 
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
+.mvn
+mvnw*
 
 ### NetBeans ###
 /nbproject/private/
@@ -26,8 +31,38 @@ target/
 /nbdist/
 /.nb-gradle/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
+
+### generated files ###
+bin/
+gen/
+
+### MAC ###
+.DS_Store
+
+### Other ###
+logs/
+log
+temp/
+/home
+/APP_HOME_IS_UNDEFINED
+/aws-lambda/src/main/resources/rebel.xml
+/calc-api/src/main/resources/rebel.xml
+/common-api/src/main/resources/rebel.xml
+/common-dao/src/main/resources/rebel.xml
+/common-webconfig/src/main/resources/rebel.xml
+/email-api/src/main/resources/rebel.xml
+/file-api/src/main/resources/rebel.xml
+/gateway/src/main/resources/rebel.xml
+/job-api/src/main/resources/rebel.xml
+/spring-starters/multi-tenant-starter/src/main/resources/rebel.xml
+/org-api/src/main/resources/rebel.xml
+/payment-api/src/main/resources/rebel.xml
+/spring-starters/revision-starter/src/main/resources/rebel.xml
+/shipping-api/src/main/resources/rebel.xml
+/sku-api/src/main/resources/rebel.xml
+/spring-starters/soft-delete-starter/src/main/resources/rebel.xml
+/spring-starters/user-info-starter/src/main/resources/rebel.xml
+/spring-starters/webflux-google-recaptcha-starter/src/main/resources/rebel.xml
